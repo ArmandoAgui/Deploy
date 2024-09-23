@@ -3,9 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pokémon CRUD</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <div class="container">
+        <h1>Pokémon CRUD con PokéAPI</h1>
+
+        <!-- Formulario de búsqueda -->
+        <div class="search">
+            <input type="text" id="pokemon-name" placeholder="Buscar Pokémon...">
+            <button onclick="getPokemon()">Buscar</button>
+        </div>
+
+        <!-- Resultados de la búsqueda -->
+        <div id="pokemon-result"></div>
+
+        <!-- Simulación de la lista de Pokémon agregados -->
+        <h2>Pokémon Personalizado</h2>
+        <form id="pokemon-form">
+            <input type="text" id="custom-name" placeholder="Nombre del Pokémon" required>
+            <input type="text" id="custom-type" placeholder="Tipo del Pokémon" required>
+            <button type="submit">Agregar Pokémon</button>
+        </form>
+
+        <ul id="custom-pokemon-list"></ul>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
